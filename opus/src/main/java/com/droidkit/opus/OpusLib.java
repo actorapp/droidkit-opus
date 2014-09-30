@@ -6,6 +6,11 @@ import java.nio.ByteBuffer;
  * OpusLib native binding
  */
 public class OpusLib {
+
+    static {
+        System.loadLibrary("opus");
+    }
+
     /**
      * Starting opus recording
      *
